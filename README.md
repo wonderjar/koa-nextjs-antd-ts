@@ -16,7 +16,7 @@ yarn start_dev
 ```
 
 - Access nextjs index page http://localhost:3500
-- Access antd page http://localhost:3500/antd
+- Access page using antd component http://localhost:3500/antd
 - Access api in koa http://localhost:3500/api/hello
 
 
