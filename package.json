@@ -1,0 +1,31 @@
+{
+  "name": "silence",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start_dev": "onchange -i -k '**/*.ts' '**/*.tsx' -- yarn refresh_local",
+    "refresh_local": "yarn build_local && yarn run_local",
+    "build_local": "next build && tsc --project tsconfig.server.json",
+    "run_local": "node .next/server.js",
+    
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@types/koa": "^2.11.3",
+    "antd": "^4.4.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.1.0",
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.20",
+    "@types/react": "^16.9.41",
+    "onchange": "^7.0.2",
+    "typescript": "^3.9.6"
+  }
+}
